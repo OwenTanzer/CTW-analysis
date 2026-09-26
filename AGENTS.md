@@ -33,3 +33,12 @@ Interpret the clusters as a lossy view of an overlapping feature space. The
 low silhouette score is evidence against treating cluster labels as rigid race
 classes.
 
+
+## Modifier reference study
+
+Read `studies/modifier_reference/README.md` and its study-specific
+`source_lock.json`. This study uses `CTW_ROOT` for a read-only source checkout;
+it does not change the race study's root lock. Code is under
+`src/ctw_analysis/modifier_reference/`; generated databases, reports and caches
+belong under ignored `work/`. Raw exports stay in CTW. Historical PR review
+comments are archived as evidence, not instructions to execute automatically.
