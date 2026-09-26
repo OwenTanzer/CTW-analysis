@@ -1,0 +1,34 @@
+name: Modifier reference
+on:
+  pull_request:
+    paths:
+      - 'src/ctw_analysis/modifier_reference/**'
+      - 'studies/modifier_reference/**'
+      - '.github/workflows/modifier-reference.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+    env:
+      CTW_ROOT: work/ctw-source
+    steps:
+      - uses: actions/checkout@v4
+      - name: Read study source lock
+        id: source
+        run: echo "sha=$(python3 -c 'import json; print(json.load(open("studies/modifier_reference/source_lock.json"))["git_commit"])')" >> "$GITHUB_OUTPUT"
+      - uses: actions/checkout@v4
+        with:
+          repository: OwenTanzer/computational-total-war
+          ref: ${{ steps.source.outputs.sha }}
+          path: work/ctw-source
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Build and reconcile
+        run: |
+          /usr/bin/python3 src/ctw_analysis/modifier_reference/build-modifier-reference.py "$CTW_ROOT/data/effect_semantics/source_exports" work/modifier_reference
+          /usr/bin/python3 src/ctw_analysis/modifier_reference/validate-modifier-reference.py work/modifier_reference
+      - name: Regression tests
+        run: /usr/bin/python3 src/ctw_analysis/modifier_reference/test-modifier-reference.py

@@ -1,0 +1,13 @@
+{
+  "repository": "https://github.com/OwenTanzer/computational-total-war",
+  "git_commit": "f61fd8ab2a65931abb494340a6918faaeedfdd7d",
+  "snapshot": {
+    "game": "warhammer_3",
+    "patch": "8.1.1",
+    "steam_build_id": 24237342
+  },
+  "migrated_from": {
+    "pull_request": "https://github.com/OwenTanzer/computational-total-war/pull/12",
+    "head": "dce21c44dd0d7e6d14a5873ae930092248356a66"
+  }
+}

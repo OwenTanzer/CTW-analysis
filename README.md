@@ -49,3 +49,11 @@ python src/ctw_analysis/race_feature_analysis.py \
 Generated files go to `work/race_feature_output/`. The compact, reviewed
 snapshot under `studies/` is committed; the 1.2 MB unit-level score table and
 other regenerable intermediates remain ignored.
+
+## Experimental modifier reference
+
+The modifier-reference work formerly in database PR #12 now lives in
+[`studies/modifier_reference/`](studies/modifier_reference/README.md), with code
+under `src/ctw_analysis/modifier_reference/`. It reads its own pinned database
+checkout and writes generated indexes only under ignored `work/`. See that
+study's setup and outstanding review findings before using candidate results.
