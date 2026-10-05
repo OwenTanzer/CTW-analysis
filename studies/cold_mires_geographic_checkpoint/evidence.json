@@ -1,0 +1,183 @@
+{
+  "study": "cold_mires_geographic_checkpoint",
+  "date": "2026-10-04",
+  "decision": "partially_supported",
+  "analysis_base": "fb17eb88c3a5f9f5707245ecfea9fa36d65518f1",
+  "fixture": {
+    "configured_battle_key": "chs_wastes_coast_a_01",
+    "atlas_battle_map_key": "battle:chs_wastes_coast_a_01",
+    "map_location": "terrain\\battles\\chs_wastes_coast_a\\",
+    "source_catchment": "catchment_01",
+    "source_tile": "tile_11",
+    "source_tile_upgrade": null,
+    "source_battle_group_rows": [],
+    "source_group_status": "No battle_group_maps row for this exact atlas key; do not infer a group",
+    "source_vegetation": "def_bleak candidate",
+    "observed_label": "Cold Mires \u2013 Chaos Coast",
+    "observed_mode": "Skirmish vs A.I. / Land Battle",
+    "observed_settings": {
+      "unit_scale": "Ultra",
+      "difficulty": "Normal",
+      "time_limit_minutes": 60,
+      "funds": "Default Funds",
+      "attacker": "Bretonnia",
+      "defender": "Bretonnia",
+      "realism": false,
+      "large_armies": false,
+      "unit_caps": false
+    },
+    "runtime_patch": {
+      "value": "9.0.3",
+      "basis": "Owen: The latest i think it 9.0.3",
+      "status": "user_reported_uncertain"
+    },
+    "runtime_steam_build": null,
+    "runtime_internal_selector_binding": "unverified",
+    "runtime_asset_hash_compatibility": "not_verified",
+    "visible_geometry_compatibility": "Several relative rock-outline shapes and positions corroborated; not whole-asset or engine compatibility"
+  },
+  "references": {
+    "game-battlefield-original.png": {
+      "sha256": "99daa5a95190e24ffb5ed3c04ee18c31fea4c1d0d171347d728b686c18be5fa7",
+      "upload_file_id": "file_00000000f4dc81f7a917cf208ccd958e",
+      "pixels": [
+        1920,
+        1200
+      ],
+      "received_local": "2026-10-04 16:48 America/Los_Angeles",
+      "capture_time": "unknown"
+    },
+    "game-setup-original.png": {
+      "sha256": "abb7eae5fd940f0cd4e7da239af4b48ed4576f94bb5cf1aca59db658bd3acf4d",
+      "upload_file_id": "file_00000000e07c8230980dd48b434597a0",
+      "pixels": [
+        1920,
+        1200
+      ],
+      "received_local": "2026-10-04 16:52 America/Los_Angeles",
+      "capture_time": "unknown"
+    },
+    "data-hypothesis-original.png": {
+      "sha256": "6b7d62de29e7d7aa4e9e4ee2649702922756d369340ae23e817de317dc0111d7",
+      "origin": "CTW-data pinned dataset/map.png, byte-unchanged"
+    }
+  },
+  "alignment": {
+    "preview_crop_xyxy_half_open": [
+      1481,
+      546,
+      1755,
+      839
+    ],
+    "crop_pixels": [
+      274,
+      293
+    ],
+    "native_domain_xz_half_open": [
+      1088,
+      1536,
+      2048,
+      2560
+    ],
+    "mapping_to_preview_edge_coordinates": {
+      "u": "(X-1088)*274/960",
+      "v": "(2560-Z)*293/1024"
+    },
+    "display_change": "Reverse vertical display direction relative to retained map.png; no X reversal or source data change",
+    "fit": "Fixed full-domain-to-preview-rectangle mapping; no per-landmark offsets, rotation optimization or local warping",
+    "orientation_selection": "Outline 1 shape first suggested vertical reversal; 8 and 18 and then 3, 21, 26 used as additional visual checks",
+    "validation_limits": "Retrospective visual check, not blinded or statistically independent. No residual precision claimed. Preview is only 274x293 source pixels. Internal world transform, compass and metre scale unverified."
+  },
+  "landmarks": [
+    {
+      "source_outline_id": 1,
+      "status": "qualitative_preview_correspondence_supported",
+      "role": "orientation_anchor",
+      "note": "Curved rim enclosing the lower end of an elongated vegetation cluster in preview frame",
+      "collision_status": "unknown"
+    },
+    {
+      "source_outline_id": 8,
+      "status": "qualitative_preview_correspondence_supported",
+      "role": "additional_check",
+      "note": "Compact rock cluster to drawing-left near mid-height",
+      "collision_status": "unknown"
+    },
+    {
+      "source_outline_id": 18,
+      "status": "qualitative_preview_correspondence_supported",
+      "role": "additional_check",
+      "note": "Isolated outcrop drawing-right of the elongated central vegetation cluster",
+      "collision_status": "unknown"
+    },
+    {
+      "source_outline_id": 3,
+      "status": "qualitative_preview_correspondence_supported",
+      "role": "additional_check",
+      "note": "Small crescent at upper right",
+      "collision_status": "unknown"
+    },
+    {
+      "source_outline_id": 21,
+      "status": "qualitative_preview_correspondence_supported",
+      "role": "additional_check",
+      "note": "Long curved feature below 3 near right side",
+      "collision_status": "unknown"
+    },
+    {
+      "source_outline_id": 26,
+      "status": "qualitative_preview_correspondence_supported",
+      "role": "additional_check",
+      "note": "C-shaped feature near centre-right, with vegetation inside",
+      "collision_status": "unknown"
+    }
+  ],
+  "observations": {
+    "preview": "Rock silhouettes and placement pattern correspond under the fixed vertical reversal. Preview does not clearly depict candidate water footprint. Tiny marks and exact contour edges unresolved.",
+    "battlefield": "Curved exposed rock rim at screenshot left, dense trees on an elongated rise, isolated jagged rock formation near foreground centre-right, and steep rocky background right. Irregular green and darker ground patches alone do not classify water or depth.",
+    "battlefield_to_setup_link": "Matching minimap landmarks corroborate continuity; capture timestamps and runtime identifiers are absent.",
+    "mechanics": "Passability, concealment and projectile obstruction untested; no movement or combat inference.",
+    "boundary_discrepancy": "Candidate outline 8 encloses a somewhat larger area than the dark visible rock cluster. Candidate polygons are not exact render-silhouette or collision footprints."
+  },
+  "verification": {
+    "environment": {
+      "python": "3.12.14",
+      "numpy": "2.3.5",
+      "matplotlib": "3.10.8"
+    },
+    "working_environment": "authorized cloud scratch checkout; no MSI changes",
+    "commands": [
+      {
+        "command": "python scripts/cold_mires/build.py --output work/cold-mires-check-20261004",
+        "result": "passed; five source hashes checked by builder"
+      },
+      {
+        "command": "python scripts/cold_mires/render.py --dataset work/cold-mires-check-20261004 --output work/cold-mires-check-20261004/map.png",
+        "result": "passed"
+      },
+      {
+        "command": "python scripts/cold_mires/test_map.py",
+        "result": "passed: 6 tests"
+      },
+      {
+        "command": "python scripts/cold_mires/test_rebuild.py",
+        "result": "passed: 5 tests, exact reconstruction"
+      },
+      {
+        "command": "git diff --check",
+        "result": "passed on Data"
+      }
+    ],
+    "full_repository_tests": "not_run",
+    "runtime_geometry_and_mechanics_tests": "not_run",
+    "coordinate_world_certification": "not_run",
+    "comparison_command": {
+      "command": "python src/ctw_analysis/cold_mires_comparison.py --data-root ../CTW-data",
+      "result": "passed; exact Data commit, 20 file hashes and 3 reference hashes checked; both figures visually inspected"
+    },
+    "analysis_checks": [
+      "python -m py_compile src/ctw_analysis/cold_mires_comparison.py: passed",
+      "git diff --check: passed"
+    ]
+  }
+}

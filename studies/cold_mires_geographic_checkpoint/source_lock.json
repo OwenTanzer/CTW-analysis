@@ -1,0 +1,51 @@
+{
+  "repository": "https://github.com/OwenTanzer/CTW-data",
+  "commit": "3b5d13d94c5ed3eb4b9c6ce61cc75854b4426196",
+  "scope": "Study-local hypothesis pin; unrelated root source_lock.json unchanged",
+  "source_patch": "9.0.1",
+  "source_steam_build": "25546563",
+  "files": {
+    "docs/development/battlefields/cold-mires/README.md": "7f2f0be1ba6fb617d3a3e77b51cfe1e447026aceb5e17d669214b75566da0492",
+    "docs/development/battlefields/cold-mires/EXTRACTION.md": "d1dfdf2f2f32f5bc79451b6644127eac1c8514344b5fa666ba18db789b8f2a51",
+    "docs/development/battlefields/cold-mires/build_spec.json": "72c478693062bbc3bf0b5fd87dd3e69d22377eb823ae043d849fffb30d3200d4",
+    "docs/development/battlefields/cold-mires/schema.json": "b847ed8ea89e15ca47e6153cb0e8f72eea7a4359ce23cf913e6a840b62b11ddf",
+    "docs/development/battlefields/cold-mires/validation.json": "da027f5368df5d0e8c4ed7b1066c7e6717cfc3742b7fb7561f221896f42914ff",
+    "docs/development/battlefields/cold-mires/dataset/manifest.json": "a7372076bb92023c7e33f0cb19b3809a6d49e4727237688287483f9ace05af88",
+    "docs/development/battlefields/cold-mires/dataset/features.json": "465b3aedd81d718f2ceb4ecdb364701a5bbd82410b0269e1e298d6267253a5d6",
+    "docs/development/battlefields/cold-mires/dataset/rasters.npz": "9c41035e4502ab2df204fa237546dc5aa5144c8ab8c0e4e79e783b1544c7a27f",
+    "docs/development/battlefields/cold-mires/dataset/map.png": "6b7d62de29e7d7aa4e9e4ee2649702922756d369340ae23e817de317dc0111d7",
+    "docs/development/battlefields/cold-mires/source/supplemental.zip": "0f4e7cacd9e5a28196828245fd997b1c26cfd19f16e33d77b482c11e8a982f2e",
+    "data/campaign_map/campaign_atlas__wh3__9.0.gpkg": "10a46ace9ce0677c54642fea450ca3a3905b766487464ce3c41f2d7ba48e7dcf",
+    "scripts/cold_mires/barrier_prefix.py": "579e050d96f5e6863ffaaa6ab6d2eda8264b57bf9f511314536f5c42ed3b79c4",
+    "scripts/cold_mires/build.py": "e8901a81d56738e7c42dc230aea2f73dd6bba22430c18f64adf4796b426a2ae1",
+    "scripts/cold_mires/classify_water.py": "c2523e3276fe7c34c1a3e609efe3dc9cca335ec991e0ea30db50e1b8f7dc2f34",
+    "scripts/cold_mires/native_height.py": "51dc2a25c9c6ee6271e11d8cd259d723e6b51ff83ccb235246227f1e12d3df6b",
+    "scripts/cold_mires/query_map.py": "b5f67fc8d4d819679c6e94511a82f67deb39f516cf1f78b320d710612aa87df4",
+    "scripts/cold_mires/render.py": "cb254d9299d0c6d8b5d9a03d2b05191fb06d8b4871a862f4734a8dc7933548e7",
+    "scripts/cold_mires/test_map.py": "89778a5680972a8b4edf429f98d5d56b0e28e843af6924a6fcda4edc216f5cb4",
+    "scripts/cold_mires/test_rebuild.py": "29838551154306f662fdaa2273bc1fd8f0ba5328213892aa05c613a573555eba",
+    "scripts/cold_mires/tree_list.py": "39407a18849a544cdfc0f89dd47bc10860d931dc8e30bf5caeb80385ad788c4e"
+  },
+  "native_input_hashes": {
+    "ground": {
+      "path": "terrain/tiles/battle/chs_wastes/chs_wastes_coast_a/tile_11/tile_height_map.compressed_map",
+      "sha256": "5a4b4b0a7266b829b3d064b9c328bb2561ce0aac5d8592302b63f596a999be91"
+    },
+    "water": {
+      "path": "terrain/tiles/battle/chs_wastes/chs_wastes_coast_a/tile_11/tile_water_height_map.compressed_map",
+      "sha256": "41042ab7e5f299ce04ce8d9d7bf9d3fbcecf43eaf4094e01e59a5f1f96a2bc33"
+    },
+    "vegetation_def_bleak": {
+      "path": "terrain/tiles/battle/chs_wastes/chs_wastes_coast_a/tile_11/def_bleak.tree_list.bin",
+      "sha256": "7e91529d982c3e4e98f37a61a83034a4f233d50f14cf75189c7be890aebb1fa6"
+    },
+    "base_bmd": {
+      "path": "terrain/tiles/battle/chs_wastes/chs_wastes_coast_a/tile_11/bmd_data.bin",
+      "sha256": "d98d5e31cf8d12e764822a9aee5cbf57e580ebb488d83cdb9f9316fcb441d259"
+    },
+    "nogo_bmd": {
+      "path": "terrain/tiles/battle/chs_wastes/chs_wastes_coast_a/tile_11/bmd_nogo_data.bin",
+      "sha256": "1dcacd8ce5e06a561a845975e3785358846886a2f964843bc609291de34f0a89"
+    }
+  }
+}
